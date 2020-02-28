@@ -1,0 +1,3 @@
+rootProject.name='ViewPagerPartlyTransform'
+include ':app'
+include ':partlyTransformLib'

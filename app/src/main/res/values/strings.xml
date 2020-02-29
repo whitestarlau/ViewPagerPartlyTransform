@@ -3,4 +3,7 @@
 
     <string name="test_text">This is a test text.</string>
     <string name="comparative_text">This is a comparative text.</string>
+
+    <string name="test2_text">Rd.</string>
+    <string name="test3_text">Te.</string>
 </resources>

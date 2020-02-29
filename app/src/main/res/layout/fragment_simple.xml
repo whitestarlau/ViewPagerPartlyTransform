@@ -6,25 +6,77 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
         android:text="@string/comparative_text"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.whitestar.partlytransformlib.SimpleTransformTextView
-        android:id="@+id/positionTv"
+        android:id="@+id/testTv0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="1dp"
+        android:text="@string/test_text"
+        android:textColor="@color/textColor"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.043" />
 
+    <com.whitestar.partlytransformlib.DelegatesTransformTextView
+        android:id="@+id/testTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:text="@string/test_text"
+        android:textColor="@color/textColor"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testTv0" />
+
+    <ImageView
+        android:id="@+id/testIv0"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="43dp"
+        android:background="@color/textColor"
+        android:text="@string/test_text"
+        android:textColor="@color/textColor"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testTv1" />
+
+    <com.whitestar.viewpagerpartlytransform.custom.LazyTransformImageView
+        android:id="@+id/testIv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/img_bg"
+        android:text="@string/test_text"
+        android:textColor="@color/textColor"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testTv1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

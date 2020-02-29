@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.whitestar.partlytransformlib.transformer
+package com.whitestar.viewpagerpartlytransform.custom
 
 import android.view.View
 import com.whitestar.partlytransformlib.IPartlyTransformView
 
-open class LazySlideTransformer : IPartlyTransformView {
+open class LazySlideTransformerB : IPartlyTransformView {
 
     override fun onTransform(page: View, position: Float) {
 //        val height = page.height.toFloat()
         val width = page.width.toFloat()
 
-        page.translationX = if (position > 0) width * position * 0.6f else width * position * 0.6f
+        page.translationX = if (position > 0) width * position * 0.9f else width * position * 0.9f
     }
 }

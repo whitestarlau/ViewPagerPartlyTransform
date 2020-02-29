@@ -1,27 +1,24 @@
-package com.whitestar.partlytransformlib
+package com.whitestar.viewpagerpartlytransform.custom
 
 import android.content.Context
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatTextView
-import com.ToxicBakery.viewpager.transforms.*
 import com.whitestar.partlytransformlib.IPartlyTransformView
-import com.whitestar.partlytransformlib.transformer.CubeInTransformer
 
 /**
  * @Author: LiuYiXin
  * @Date: 2020/2/27 17:46
  * @Description: 一个简单的局部动效控件例子。使用委托模式将工作委托给预置好的Transformer
  */
-class DelegatesTransformTextView2(
+class LazyTransformImageView(
     context: Context?,
     attrs: AttributeSet?,
     defStyleAttr: Int
-) : AppCompatTextView(
+) : androidx.appcompat.widget.AppCompatImageView(
     context,
     attrs,
     defStyleAttr
 ),
-    IPartlyTransformView by CubeInTransformer() {
+    IPartlyTransformView by LazySlideTransformerB() {
 
     companion object {
         const val TAG = "SimpleTransformTextView"

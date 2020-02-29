@@ -37,7 +37,6 @@ class SimpleFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         position?.let {
-            positionTv.text = resources.getText(R.string.test_text)
             view.setBackgroundResource(colorArray[it])
         }
 

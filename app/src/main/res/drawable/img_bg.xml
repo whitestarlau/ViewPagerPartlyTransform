@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="0"
+        android:startColor="#6f86f3"
+        android:endColor="#76baff"
+         />
+
+    <!-- 这里是设置为四周 也可以单独设置某个位置为圆角-->
+    <corners android:radius="20dp" />
+
+</shape>

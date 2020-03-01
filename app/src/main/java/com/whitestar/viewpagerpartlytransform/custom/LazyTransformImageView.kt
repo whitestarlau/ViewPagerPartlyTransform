@@ -3,6 +3,7 @@ package com.whitestar.viewpagerpartlytransform.custom
 import android.content.Context
 import android.util.AttributeSet
 import com.whitestar.partlytransformlib.IPartlyTransformView
+import com.whitestar.partlytransformlib.transformer.RotateDownTransformer
 
 /**
  * @Author: LiuYiXin
@@ -18,7 +19,7 @@ class LazyTransformImageView(
     attrs,
     defStyleAttr
 ),
-    IPartlyTransformView by LazySlideTransformerB() {
+    IPartlyTransformView by RotateDownTransformer() {
 
     companion object {
         const val TAG = "SimpleTransformTextView"
